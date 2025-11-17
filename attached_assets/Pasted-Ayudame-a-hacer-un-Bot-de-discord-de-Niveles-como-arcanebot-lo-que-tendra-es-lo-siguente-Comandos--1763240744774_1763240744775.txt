@@ -1,0 +1,246 @@
+Ayudame a hacer un Bot de discord de Niveles como arcanebot, lo que tendra es lo siguente
+
+Comandos para usuarios
+
+/Level (user) muestra el nivel del usuario y si no se especifica el user se usa el del que ejecuto el comando
+
+/Nivel. Lo mismo que /level
+
+/rank. Lo mismo que level
+
+/leaderboard. Muestra la tabla de niveles top 10 hasta top 1, el top 1 en dorado, el top 2 en plateado, el top 3 en color bronce, Como la imagen 1.
+
+/lb. lo mismo que /leaderboard
+
+/rewards list. Muestra un embed color amarillo con las recompensas por subir de nivel
+
+Comandos del Staff
+
+/add level (user)
+
+Añadir niveles a un usuario
+
+/remove level (user)
+
+Quitar niveles a un usuario
+
+/set leve (user)
+
+establecer un nuevo nivel a un usuario
+
+/xp add (user)
+
+Dar puntos de xp a un usuario
+
+/xp remove (user)
+
+Remover xp a un usuario
+
+/xp reset (user)
+
+Le quita toda la xp por lo tanto niveles a un usuario
+
+/add boost (user)
+
+Añadir un boost de xp a un usuario
+
+/add boost (canal)
+
+ añadir un boost de xp a un canal
+
+/boost list 
+
+ver la lista de canales, roles, usuarios boosteados (pueden usarlo todos los usuarios)
+
+/reset temporada
+
+resetar la xp y niveles de todos en el servidor
+
+/ban xp (user) (tiempo
+
+/unban xp (user)
+
+quita el ban si el tiempo es mucho
+
+/ban channel xp
+
+hace que en el canal seleccionado  los usuarios no puedan ganar xo
+
+/unban channel xp
+
+Quita el efecto
+
+El usuario deja de ganar xp durante el tiempo del ban
+
+Minijuegos para todos los usuarios:
+
+/XP Minijuego. Empiezan minijuegos como imagen 2. para ganar recompensas:
+
+ trivia como los de Nekotinabot con 5 preguntas y si el usuario responde todas bien al primer intento se le daria la opción de dos recompensas, un boost de 20% durante 12 horas o ganar 1.5 NIveles automaticamente, con un cooldown de 12 horas para volver a ganar recompensas pero pueden seguir jugando
+
+
+ piedra papel o tijeras al mejor de tres con otro usuario el cual debe aceptar jugar, el que gane tres rondas primero ganara un boost de niveles del 30% durante 2 horas, con un cooldown de 12 horas para volver a ganar recompensa pero puede seguir jugando normalmente.
+
+  roulette shot, ruleta rusa
+
+El juego debe simular las probabilidades de un revólver de 6 disparos con 1 o más balas.
+​El Revólver: Un arreglo o lista de 6 "cámaras" o "slots".
+​La Bala: Una de las cámaras se marca como la "bala" (ej. True, 1, o "💥"). Las otras son "vacías" (ej. False, 0, o "💨").
+​El Tambor: Al comienzo de cada ronda, el bot debe "cargar" y "girar" el tambor. Esto significa:
+​Decidir cuántas balas se usarán (ej. 1 de 6).
+​Asignar las balas a posiciones aleatorias en el arreglo de 6 cámaras.
+  
+Esta es la probabilidad de que la persona que presiona el gatillo en ese turno específico obtenga la bala.
+
+Turno (Disparo) Cámaras Restantes Probabilidad de BANG Probabilidad de CLIC
+1° 6 \frac{1}{6} (\approx 16.67\%) \frac{5}{6} (\approx 83.33\%)
+2° 5 \frac{1}{5} (20\%) \frac{4}{5} (80\%)
+3° 4 \frac{1}{4} (25\%) \frac{3}{4} (75\%)
+4° 3 \frac{1}{3} (\approx 33.33\%) \frac{2}{3} (\approx 66.67\%)
+5° 2 \frac{1}{2} (50\%) \frac{1}{2} (50\%)
+6° 1 \frac{1}{1} (100\%) \frac{0}{1} (0\%)
+
+El ganador del minijuego gane automaticamente 2.5 niveles y el perdedor perderia 3 niveles, al momento de que el usuario que ejecute el comando /XP minijuego (roulette shot) (usuario) cuando el segundo usuario acepte jugar antes de empezar el juego apareceria una advertencia sobre las consecuencias al perdedor, El juego tendria cooldown de 1 dia para volver a tener recompensas pero se puede seguir jugando con normalidad sin ganar o perder niveles.
+
+
+Ahorcado.
+
+Este minijuego tendria dos modalidades de juego
+
+1. Solitario, se jugaria con un solo usuario y el bot daria la palabra a adivinar con minimo 5 caracteres y 5 intentos, si falla los intentos pierde pero puede volver a intentarlo y si gana el usuario pasaria automaticamente a la ronda dos y si vuelve a ganar pasa a la ronda tres y si logra superar las tres rondas seguidas podria elejir dos posibles recompensas, un potenciador del 25% durante 4 horas o 1 nivel automaticamente, Cooldown de recompensas de 2 dias.
+
+1. Multijugador, /XP minijuego ahorcados (user) 
+
+al momento de que ambos usuarios acepten jugar, Uno seria dominado como el anfitrion de manera aleatoria y seria el que le da la palabra a adivinar al otro jugador con minimo 5 letras, al momento de pasar a la ronda dos se le pediria al anfitrion que de otra palabra para el otro jugador y asi igual en la tercera ronda, si el usuario que tiene que adivinar las palabras pierde este mismo pasa a ser el anfitrion y el que era anfitrion ahora sera el que tenga que adivinar las palabras, asi mismo si el usuario gana el anfitrion seria el que pasaria a adivinar.
+
+quiero que aparezcan Imagenes al momento de subir de nivel, hacer /leaderboard/lb y /level (y sus variantes) como en arcane pero con mas personalización
+
+Imagen 3 leaderboard y level
+
+Imagen 4, subir de nivel.
+
+Recompensas por subir de nivel
+
+Nivel 1 = 1313715879816597514
+
+Nivel 5 = 1313716079998140536
+
+Nivel 10 = 1313716235573264437
+
+Nivel 20 = 1313716306599481436
+
+Nivel 25 = 1239330751334584421 (Miembro activo)
+
+Nivel 30 = 1438675114911596624
+
+Nivel 35 = 1313716401021911102 (Miembro super activo)
+
+Nivel 40 = 1313716612452581437
+
+Nivel 50 = 1313716715934453761
+
+Nivel 75 = 1313716864790302730
+
+Nivel 100 = 1313716964383920269
+
+Los usuarios que son boosters y vips que tengan un pontenciador o boost de niveles del 200%
+
+Boosters: 1423037247606882399
+
+Vips: 1423037247606882399
+
+Personalizacion
+
+Quiero que la "Tarjeta" de los usuarios al momento de subir de nivel y al hacer /level sean mas personalizadas y no como la imagen, Quiero que los usuarios normales tengan un estilo Pixel art, Los usuarios Activos una tarjeta con estilo del mar y cosas asi pero manteniendo Pixel art, Super activos una tarjeta estilo Zelda con colores amarillos y verdes etc pero manteniendo Pixel art, Los usuarios con Nivel 100 una tarjeta estilo pokemon aun manteniendo el pixel art
+
+Los usuarios que son boosters tendrian una tarjeta personalizada con tematica de geometry dash
+
+Los vips una con tematica de noche, estrellas, luna etc
+
+El usuario 956700088103747625 una tarjeta estilo roblox, minecraft, zelda, Five nights at freddys y geometry dash, osea seria aleatoria cada vez que suba de nivel o haga /level
+
+
+Otros comandos:
+
+/global boost (solo staff9
+
+Añadir un boost de niveles a todos en el server
+
+/remove global boost (solo staff) 
+
+Quita el boost
+
+/boost status (todos los usuarios)
+
+El bot dice el estado de los boost, como boost de 500% durante 10 minutos por ejemplo
+
+/embed  (solo staff)
+
+Genera un embed personalizable con imagen, color etc y que se configure en formato modal
+
+/mensaje (texto) (solo staff 
+
+genera un mensaje plano con el texto respectivo
+
+/Help (usuarios)
+
+manda un embed verde con los comandos utilizables por los usuarios y sus funciones
+
+/Help (staff)
+
+Manda un embed amarillo con los comandos utilizables por los usuarios y sus funciones
+
+
+algunos IDS para que los integres automaticamente
+
+Staff role: 1230949715127042098
+
+Canales donde no se gana XP:1313723272290111559 y 1258524941289263254
+
+Canal donde se envia el mensaje cada que se sube de nivel: 1243975130908983356
+
+
+Otras cosas
+
+
+Quiero que cada que se haga de noche usando el horario venezolano se aplique un boost del 25% que dure hasta que amanezca (que sea compatible con /boost status)
+
+Quiero que las funciones puedan sobrevivir a reinicios del bot
+
+Quiero  que los boost sean acumulables, como por ejemplo si un usuario tiene un boost que gano en un minijuego ese boost se acumule osea sume a otro boost como el de la noche
+
+Añade otro comando, /clear level roles
+
+Un rol peligroso porque al momento de ejecutarlo (staff) le quitaria TODOS los roles de niveles a TODOS en el server, asi que apareceria una advertencia para confirmar el usarlo
+
+
+FORMULA
+
+
+La velocidad iria bajando conforme se sube de nivel
+
+
+Quiero que los primeros 5 niveles sean MUY rapidos subirlos
+
+a partir del nivel 6 la velocidad bajaria de MUY rapida a muy rapida
+
+a partir del nivel 10 la velocidad bajaria de muy rapida a rapida
+
+a partir del nivel 15 la velocidad bajaria de rapida a medianamente rapida
+
+a partir del nivel 20 la velocidad bajaria de medianamente rapida a normal
+
+a partir del nivel 35 la velocidad bajaria de normal a medianamente normal
+
+a partir del nivel 40 la velocidad bajaria de medianamente normal a un poco lenta
+
+a partir del nivel 50 la velocidad bajaria de un poco lenta a medianamente lenta
+
+a partir del nivel 75 la velocidad bajaria de medianamente lenta a Lenta
+
+y por ultimo a partir del nivel 90 la velocidad bajaria de medianamente lenta a MUY lenta 
+
+
+Habria un cooldown de obtener XP de 10 segundos por mensaje asi no se hace spam y farming de niveles, y se ganaria XP por todo, osea, imagenes, videos, reacciones, etc
+
+Perfecciona lo que bajo tu criterio deberiamos mejorar
